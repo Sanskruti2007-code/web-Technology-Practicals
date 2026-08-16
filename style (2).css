@@ -1,0 +1,263 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    /* Main Blue-Violet Background */
+    background: linear-gradient(135deg, #0f172a, #312e81, #6d28d9);
+}
+
+
+/* Heading */
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-shadow: 0 3px 10px #000000;
+}
+
+
+/* Registration Box */
+
+form {
+    width: 520px;
+    margin: auto;
+    padding: 30px;
+
+    /* Dark Card */
+    background: linear-gradient(145deg, #111827, #1e1b4b);
+
+    color: #e9d5ff;
+
+    border: 1px solid #7c3aed;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(124, 58, 237, 0.25);
+
+    transition: 0.3s;
+}
+
+
+/* Form Hover */
+
+form:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(124, 58, 237, 0.45);
+}
+
+
+/* Input Fields */
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+
+    width: 100%;
+    padding: 11px;
+
+    margin-top: 6px;
+
+    background-color: #0f172a;
+    color: #f8fafc;
+
+    border: 1px solid #4c1d95;
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Input Focus */
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #a78bfa;
+
+    box-shadow:
+        0 0 8px rgba(167, 139, 250, 0.6);
+
+    background-color: #172554;
+}
+
+
+/* Placeholder / Text */
+
+input,
+textarea,
+select {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Radio Buttons */
+
+input[type="radio"] {
+    accent-color: #8b5cf6;
+}
+
+
+/* Checkboxes */
+
+input[type="checkbox"] {
+    accent-color: #3b82f6;
+}
+
+
+/* File Upload */
+
+input[type="file"] {
+    margin-top: 8px;
+    color: #c4b5fd;
+}
+
+
+/* Buttons */
+
+input[type="submit"],
+input[type="reset"] {
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Register Button */
+
+input[type="submit"] {
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed,
+        #9333ea
+    );
+
+    color: white;
+
+    margin-right: 10px;
+
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+}
+
+
+/* Register Hover */
+
+input[type="submit"]:hover {
+
+    transform: translateY(-3px) scale(1.04);
+
+    box-shadow:
+        0 7px 20px rgba(124, 58, 237, 0.6);
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #8b5cf6,
+        #c026d3
+    );
+}
+
+
+/* Clear Button */
+
+input[type="reset"] {
+
+    background: linear-gradient(
+        135deg,
+        #dc2626,
+        #be123c
+    );
+
+    color: white;
+
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+
+/* Clear Hover */
+
+input[type="reset"]:hover {
+
+    transform: translateY(-3px) scale(1.04);
+
+    background: linear-gradient(
+        135deg,
+        #ef4444,
+        #e11d48
+    );
+
+    box-shadow:
+        0 7px 20px rgba(239, 68, 68, 0.5);
+}
+
+
+/* Textarea */
+
+textarea {
+    resize: none;
+}
+
+
+/* File Input Hover */
+
+input[type="file"]:hover {
+    color: #a78bfa;
+}
+
+
+/* Opening Animation */
+
+form {
+    animation: formAppear 0.7s ease;
+}
+
+
+@keyframes formAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
