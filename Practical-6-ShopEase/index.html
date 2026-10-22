@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase | Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ShopEase home"><span class="brand-mark">S</span> ShopEase</a>
+    <p class="tagline">Find your everyday favourites</p>
+    <a class="cart-link" href="#cart-section" aria-label="Jump to your cart">
+      <span aria-hidden="true">🛒</span> Your Cart <span class="cart-count" id="cart-count">0</span>
+    </a>
+  </header>
+
+  <main id="top" class="page-wrap">
+    <section class="intro">
+      <p class="eyebrow">SHOP THE COLLECTION</p>
+      <h1>Explore Items</h1>
+      <p class="intro-copy">Useful picks, everyday essentials, and little upgrades for you.</p>
+    </section>
+
+    <section aria-label="Available products">
+      <div id="product-list" class="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="cart-section" class="cart-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR SELECTION</p>
+          <h2>Your Shopping Cart <span class="muted-count" id="cart-item-count">(0 items)</span></h2>
+        </div>
+        <button id="clear-cart" class="text-button" type="button" hidden>Clear cart</button>
+      </div>
+      <div id="cart-list" class="cart-list" aria-live="polite"></div>
+    </section>
+
+    <section id="bill-section" class="bill-section">
+      <div class="bill-card">
+        <div class="bill-title-row">
+          <div>
+            <p class="eyebrow">ORDER TOTAL</p>
+            <h2>Bill Summary</h2>
+          </div>
+          <span class="bill-icon" aria-hidden="true">▤</span>
+        </div>
+        <div class="bill-line"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+        <div class="bill-line"><span>Delivery charge</span><strong id="delivery">₹0</strong></div>
+        <div class="bill-line discount-line"><span>Discount</span><strong id="discount">−₹0</strong></div>
+        <div class="bill-line total-line"><span>Total amount</span><strong id="total-price">₹0</strong></div>
+        <p class="delivery-note" id="delivery-note">Add items to see your order total.</p>
+        <button id="checkout" class="checkout-button" type="button">Proceed to Checkout <span aria-hidden="true">→</span></button>
+        <p id="message" class="checkout-message" role="status" aria-live="polite"></p>
+        <p class="secure-note"><span aria-hidden="true">🔒</span> Demo checkout · No payment will be collected</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>ShopEase · Student JavaScript Practical Project</footer>
+</body>
+</html>
