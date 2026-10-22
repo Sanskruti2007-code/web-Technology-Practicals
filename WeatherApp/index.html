@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow | Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="page-header">
+            <div class="brand-mark" aria-hidden="true">☁</div>
+            <p class="eyebrow">WEATHER AT A GLANCE</p>
+            <h1>WeatherNow</h1>
+            <p class="subtitle">Find the current weather in any city.</p>
+        </header>
+
+        <section class="search-panel" aria-label="Search for a city">
+            <label for="cityInput">City name</label>
+            <div class="search-row">
+                <input type="text" id="cityInput" placeholder="Try Nagpur, Mumbai, Delhi..." autocomplete="off">
+                <button id="searchButton" type="button">Search</button>
+            </div>
+            <p class="hint">Try a city name, then press Search or Enter.</p>
+        </section>
+
+        <section id="weatherResult" class="weather-result" aria-live="polite">
+            <div class="empty-state">
+                <div class="empty-icon" aria-hidden="true">🌤️</div>
+                <h2>Weather made simple</h2>
+                <p>Your current weather report will appear here.</p>
+            </div>
+        </section>
+
+        <footer>Weather data by Open-Meteo · No API key required</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
